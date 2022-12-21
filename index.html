@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetiana Ostashko</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Tetiana Ostashko</h1>
+        <h1 id="FirstLastName">Tetiana Ostashko</h1>
         <img src="images\profile_photo.png" alt="Tetiana's profile photo" width="200">
-        <h3>Intern/Junior Frontend Developer</h3>
-        <a href="hire-me.html" target="_blank"><strong>Hire me</strong></a>
+        <p id="job-title">Intern/Junior Frontend Developer</p>
+        <a class="link" id="HireMe" href="hire-me.html" target="_blank">Hire me</a>
     </header>
     <hr />
 
@@ -22,18 +23,18 @@
             <table border="1" cellspacing="0" cellpadding="5px">
                 <thead>
                     <tr>
-                        <th style="text-align: left;"><strong>Period:</strong></th>
-                        <th><strong>Position</strong></th>
+                        <th class="table-header-WorkExperience" id="header-Period">Period:</th>
+                        <th class="table-header-WorkExperience">Position</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
                         <td>2021 - present</td>
-                        <td>Business Analyst at <a href="https://www.danfoss.com/en/" target="_blank">Danfoss A/S</a></td>
+                        <td>Business Analyst at <a class="link" href="https://www.danfoss.com/en/" target="_blank">Danfoss A/S</a></td>
                     </tr>
                     <tr>
-                        <td rowspan="4"><strong>Description</strong></td>
+                        <td class="WorkExperience-Description" rowspan="4">Description</td>
                         <td>Forecasting, inventory, and component management</td>
                     </tr>
                     <tr>
@@ -48,10 +49,10 @@
 
                     <tr>
                         <td>2018-2021</td>
-                        <td>Logistics Manager at <a href="https://www.samsung.com/ua/" target="_blank">Samsung Electronics Ukraine Company</a></td>
+                        <td>Logistics Manager at <a class="link" href="https://www.samsung.com/ua/" target="_blank">Samsung Electronics Ukraine Company</a></td>
                     </tr>
                     <tr>
-                        <td rowspan="3"><strong>Description</strong></td>
+                        <td class="WorkExperience-Description" rowspan="3">Description</td>
                         <td>Outbound logistic activities</td>
                     </tr>
                     <tr>
@@ -63,10 +64,10 @@
 
                     <tr>
                         <td>2017-2018</td>
-                        <td>Regional Export Manager at <a href="https://vents.ua/ua/" target="_blank">Vents</a></td>
+                        <td>Regional Export Manager at <a class="link" href="https://vents.ua/ua/" target="_blank">Vents</a></td>
                     </tr>
                     <tr>
-                        <td rowspan="2"><strong>Description</strong></td>
+                        <td class="WorkExperience-Description" rowspan="2">Description</td>
                         <td>Coordination of the orders, methods of delivery, and further enclosed documents (invoices, TTN, etc.)</td>
                     </tr>
                     <tr>
@@ -78,7 +79,7 @@
 
         <section>
             <h2>Skills:</h2>
-            <ul>
+            <ul class="Skills">
                 <li>English (C1)</li>
                 <li>SAP</li>
                 <li>Power BI</li>
