@@ -1,0 +1,49 @@
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#job-title {
+    font-weight: 900;
+}
+
+#FirstLastName {
+    font-style: italic;
+}
+
+.table-header-WorkExperience {
+    text-transform: uppercase; /* can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word */
+}
+
+#header-Period {
+    text-align: left;
+}
+
+/* unvisited link */
+.link {
+    color: #00f;
+    text-decoration-line: underline;
+}
+
+/* mouse over link */
+.link:hover {
+    text-decoration-line: none;
+}
+
+/* visited link */
+.link:visited {
+    color: #005;
+    text-decoration-line: underline;
+}
+
+#HireMe {
+    font-weight: 800;
+}
+
+.WorkExperience-Description {
+    font-weight: bold;
+}
+
+.Skills {
+    list-style-type: square; /* specifies the type of list item marker */
+}
