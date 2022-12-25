@@ -9,10 +9,14 @@ body {
 
 #FirstLastName {
     font-style: italic;
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px;
 }
 
 .table-header-WorkExperience {
     text-transform: uppercase; /* can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word */
+    background-color: #B6D0E2;
 }
 
 #header-Period {
@@ -40,10 +44,46 @@ body {
     font-weight: 800;
 }
 
-.WorkExperience-Description {
-    font-weight: bold;
-}
-
 .Skills {
     list-style-type: square; /* specifies the type of list item marker */
+}
+
+.header-info {
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px;
+}
+
+.work-experience-info {
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px;
+}
+
+.skills-info {
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px;
+}
+
+.achievements-info {
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px; 
+}
+
+.profile-photo {
+    border: 2px solid #B6D0E2;
+    border-radius: 100%;
+    padding: 10px;
+    width: 200px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    
+}
+
+.work-experience-table {
+    background-color: #dff2ff;
 }
