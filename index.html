@@ -10,17 +10,21 @@
 
 <body>
     <header>
-        <h1 id="FirstLastName">Tetiana Ostashko</h1>
-        <img src="images\profile_photo.png" alt="Tetiana's profile photo" width="200">
-        <p id="job-title">Intern/Junior Frontend Developer</p>
-        <a class="link" id="HireMe" href="hire-me.html" target="_blank">Hire me</a>
+
+        <div class="header-info">
+            <h1 id="FirstLastName">Tetiana Ostashko</h1>
+            <img class="profile-photo" src="images\profile_photo.png" alt="Tetiana's profile photo">
+            <p id="job-title">Intern/Junior Frontend Developer</p>
+            <a class="link" id="HireMe" href="hire-me.html" target="_blank">Hire me</a>
+        </div>
+        
     </header>
-    <hr />
 
     <main>
-        <section>
+
+        <section class="work-experience-info">
             <h2>Work Experience</h2>
-            <table border="1" cellspacing="0" cellpadding="5px">
+            <table class="work-experience-table" cellspacing="0" cellpadding="5px">
                 <thead>
                     <tr>
                         <th class="table-header-WorkExperience" id="header-Period">Period:</th>
@@ -34,7 +38,7 @@
                         <td>Business Analyst at <a class="link" href="https://www.danfoss.com/en/" target="_blank">Danfoss A/S</a></td>
                     </tr>
                     <tr>
-                        <td class="WorkExperience-Description" rowspan="4">Description</td>
+                        <th class="table-header-WorkExperience" rowspan="4">Description</th>
                         <td>Forecasting, inventory, and component management</td>
                     </tr>
                     <tr>
@@ -52,7 +56,7 @@
                         <td>Logistics Manager at <a class="link" href="https://www.samsung.com/ua/" target="_blank">Samsung Electronics Ukraine Company</a></td>
                     </tr>
                     <tr>
-                        <td class="WorkExperience-Description" rowspan="3">Description</td>
+                        <th class="table-header-WorkExperience" rowspan="3">Description</th>
                         <td>Outbound logistic activities</td>
                     </tr>
                     <tr>
@@ -67,7 +71,7 @@
                         <td>Regional Export Manager at <a class="link" href="https://vents.ua/ua/" target="_blank">Vents</a></td>
                     </tr>
                     <tr>
-                        <td class="WorkExperience-Description" rowspan="2">Description</td>
+                        <th class="table-header-WorkExperience" rowspan="2">Description</th>
                         <td>Coordination of the orders, methods of delivery, and further enclosed documents (invoices, TTN, etc.)</td>
                     </tr>
                     <tr>
@@ -77,7 +81,7 @@
             </table>
         </section>
 
-        <section>
+        <section class="skills-info">
             <h2>Skills:</h2>
             <ul class="Skills">
                 <li>English (C1)</li>
@@ -90,7 +94,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="achievements-info">
             <h2>Achievements:</h2>
             <ol>
                 <li>Successfully completed the launch of updated electronic room controllers</li>
