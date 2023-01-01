@@ -5,6 +5,9 @@ body {
 
 #job-title {
     font-weight: 900;
+    border: 2px solid #B6D0E2;
+    border-style: hidden hidden groove;
+    padding-bottom: 5px;
 }
 
 #FirstLastName {
@@ -52,6 +55,8 @@ body {
     border: 2px solid #B6D0E2;
     border-style: hidden hidden groove;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .work-experience-info {
@@ -76,7 +81,7 @@ body {
     border: 2px solid #B6D0E2;
     border-radius: 100%;
     padding: 10px;
-    width: 200px;
+    width: 100px;
 }
 
 table, th, td {
@@ -86,4 +91,9 @@ table, th, td {
 
 .work-experience-table {
     background-color: #dff2ff;
+    width: 100%;
+}
+
+.CV-photo {
+    float: right;
 }
