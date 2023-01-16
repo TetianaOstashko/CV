@@ -1,96 +1,181 @@
 body {
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-#job-title {
-    font-weight: 900;
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px;
+.grid-container {
+    width: 1200px;
+    height: 1667px;
+    display: grid;
+    grid-template-columns: 385px auto;
+    grid-template-areas: 
+        "sidebar content"
+    ;
 }
 
-#FirstLastName {
-    font-style: italic;
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px;
+.container-left {
+    background-color: #728ca9;
+    border: 1px #333;
+    border-style: hidden solid hidden hidden;
+    display: block;
+    grid-area: sidebar;
+    margin: 0;
+    width: 385px;
 }
 
-.table-header-WorkExperience {
-    text-transform: uppercase; /* can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word */
-    background-color: #B6D0E2;
+.container-right {
+    display: block;
+    grid-area: content;
+    margin: 0;
+    width: 815px;
 }
 
-#header-Period {
-    text-align: left;
+h1 {
+    color: aliceblue;
 }
 
-/* unvisited link */
-.link {
-    color: #00f;
-    text-decoration-line: underline;
+h1, h2, h4, h5, p {
+    margin: 0;
+
 }
 
-/* mouse over link */
-.link:hover {
-    text-decoration-line: none;
+hr {
+    border-top: 5px #333;
+    border-style: solid hidden hidden;
+} 
+
+a {
+    color: rgb(8, 8, 181);
+    text-decoration: none;
 }
 
-/* visited link */
-.link:visited {
-    color: #005;
-    text-decoration-line: underline;
+a:visited {
+    color: rgb(4, 4, 76);
+    text-decoration: none;
 }
 
-#HireMe {
-    font-weight: 800;
+/* LEFT PART OF WEB-PAGE */
+
+/* Name block */
+.name {
+    height: 96px;
+    width: 260px;
+    padding: 58px 85px 0 40px;
 }
 
-.Skills {
-    list-style-type: square; /* specifies the type of list item marker */
+.surname {
+    color: rgb(34, 6, 136);
 }
 
-.header-info {
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
+/* Photo */
+.photo {
+    margin: 0;
+    padding-top: 36px;
+    width: 385px;
+    height: 292px;
 }
 
-.work-experience-info {
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px;
+/* Contact block */
+.contact {
+    width: 334px;
+    padding: 50px 11px 0 40px;
 }
 
-.skills-info {
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px;
+h2 {
+    padding: 0 209px 0 1px;
 }
 
-.achievements-info {
-    border: 2px solid #B6D0E2;
-    border-style: hidden hidden groove;
-    padding-bottom: 5px; 
+.contact hr {
+    margin: 10px 43px 0 2px;
 }
 
-.profile-photo {
-    border: 2px solid #B6D0E2;
-    border-radius: 100%;
-    padding: 10px;
-    width: 100px;
+.contact-item {
+    padding: 25px 236px 0 1px;
 }
 
-table, th, td {
-    border: 1px solid #000;
-    
+.contact-item p {
+    font-size: 12px;
+    padding: 5px 0 13px;
 }
 
-.work-experience-table {
-    background-color: #dff2ff;
-    width: 100%;
+.email p {
+    color: rgb(8, 8, 181);
 }
 
+/* Language block */
+.languages {
+    height: 140px;
+    width: 291px;
+    padding: 36px 52px 0 42px;
+}
+
+.languages h5 {
+    padding-top: 15px;
+}
+
+
+/* RIGHT PART OF WEB-PAGE */
+
+.content-right {
+    padding-left: 55px;
+}
+
+.content-right hr {
+    margin: 28px 0 28px;
+    width: 659px;
+}
+
+.skills, .education {
+    width: 659px;
+}
+
+.summary, .workExperience {
+    width: 706px;
+}
+
+.boldText {
+    font-weight: bolder;
+}
+
+/* Summary */
+.summary {
+    padding-top: 58px;
+    height: 176px;
+}
+
+/* Skills */
+.skills {
+    margin: 0;
+    height: 184px;
+    padding-top: 49px;
+}
+
+.skills-left {
+    float: left;
+    padding-top: 0;
+}
+
+.skills-right {
+    padding-left: 324px;
+    padding-top: 12px;
+}
+
+/* Work Experience */
+.workExperience {
+    padding-top: 49px;
+}
+
+.previous {
+    padding-top: 15px;
+}
+
+/* Education */
+.education {
+    height: 157px;
+    padding-top: 53px;
+}
+
+.education-info {
+    padding-right: 100px;
+}
