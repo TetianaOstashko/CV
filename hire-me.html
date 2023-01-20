@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./hire-me.css">
+
 </head>
 <body>
 
-    <header>
-        <h1>Hire me</h1>
-    </header>
-
     <main>
+        <h1>Hire me</h1>
         <section> <!--Contact Information-->
             <h2>Contact information</h2>
-            <table border="1" cellspacing="0" cellpadding="5px">
+            <table>
                 <tr>
-                    <td><strong>Phone</strong></td>
+                    <td class="contact-info">Phone</td>
                     <td>+45 52 36 61 73</td>
                 </tr>
 
                 <tr>
-                    <td><strong>Address</strong></td>
+                    <td class="contact-info">Address</td>
                     <td>Denmark</td>
                 </tr>
             </table>
@@ -36,43 +35,48 @@
                         Contact me
                     </legend>
 
-                    <label for="E-mail" style="display: inline-block; width: 100px;">
-                        E-mail <span style="color: red;">*</span>:
+                    <label for="email">
+                        E-mail <span> *</span>:
                     </label>
                     <input 
                         required
                         type="email"
                         name="email"
-                        id="E-mail" />
-                    
-                    <br />
+                        id="email"
+                        class="email"
+                        placeholder="Enter your e-mail" />
 
-                    <label for="hire-description" style="display: inline-block; margin-top: 5px; width: 100px;">
+                    <p class="error-message">Error</p>
+                    <p class="success-message">Success</p>
+                    
+
+                     <br />
+
+                    <label for="hire-description">
                         Description:
                     </label>
                     <textarea 
-                        style="margin-top: 5px; vertical-align:top;"
                         name="hire-description" 
-                        id="hire-description" 
-                        cols="50" 
-                        rows="10">
-                    </textarea>
+                        id="hire-description"
+                        placeholder="Hint text"></textarea>
                     
                     <br />
 
-                    <label for="work-type" style="display: inline-block; margin-top: 5px; width: 100px;">
+                    <label for="work-type">
                         Work type
                     </label>
-                    <select name="work-type" id="work-type" style="margin-top: 5px;">
-                        <option value=""></option>
-                        <option value="on-site">On-site</option>
-                        <option value="remote">Remote</option>
-                        <option value="one-time-project">One-time project</option>
+                    <select 
+                        name="work-type" 
+                        id="work-type">
+                            <option value="" disabled selected hidden>Choose a type of work</option>
+                            <option value="on-site">On-site</option>
+                            <option value="remote">Remote</option>
+                            <option value="one-time-project">One-time project</option>
                     </select>
-
+                    
                     <br />
 
-                    <input type="submit" value="Hire me" style="margin-top: 10px;">
+                    <input type="submit" value="Hire me" class="button-submit">
                 </fieldset>
             </form>
         </section>
