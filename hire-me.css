@@ -5,14 +5,20 @@ body {
     text-align: center;
 }
 
-form, 
+h1, h2 {
+    margin: 0;
+}
+
 table {
     display: inline-block;
-    max-width: 1024px;
+    
 }
 
 form {
-    padding: 19.92px;
+    max-width: 1024px;
+    position: fixed;
+    left: calc(50% - 247px);
+    top: calc(50% - 186.75px - 44.25px);
 }
 
 label {
