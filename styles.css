@@ -22,6 +22,7 @@ body {
     grid-area: sidebar;
     margin: 0;
     width: 385px;
+    position: fixed;
 }
 
 .container-right {
