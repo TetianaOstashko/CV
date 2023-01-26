@@ -14,17 +14,17 @@
     --padding-left-languages: 36px 52px 0 42px;
 }
 
-.main-theme {
+.my-theme {
     /* colors */
-    --color-background-left: #728ca9;
+    --color-background-left: #D6E4E5;
     --color-background-right: none;
-    --color-text-primary: #333;
-    --color-header-name: aliceblue;
-    --color-header-surname: rgb(34, 6, 136);
+    --color-text-primary: #497174;
+    --color-header-name: #283f41;
+    --color-header-surname: #b33917;
 
     /* links */
-    --color-link-primary: rgb(8, 8, 181);
-    --color-link-visited: rgb(4, 4, 76);
+    --color-link-primary: #f6a792;
+    --color-link-visited: #EB6440;
 }
 
 body {
