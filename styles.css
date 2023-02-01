@@ -49,7 +49,6 @@ body {
     display: block;
     grid-area: sidebar;
     width: 385px;
-    position: fixed;
 }
 
 .container-right {
@@ -94,7 +93,7 @@ a:visited {
 .photo {
     padding-top: var(--padding-top-medium);
     width: 385px;
-    height: 292px;
+    height: auto;
 }
 
 /* Contact block */
@@ -202,3 +201,83 @@ h1, h2, h4, h5, p,
     margin: var(--margin-main);
 
 }
+
+
+/* Adaptive design for phone screens */
+ 
+@media screen and (max-width: 414px) {
+
+    .grid-container {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "content"
+        ;
+    }
+
+    .grid-item.container-left {
+        width: 100%;
+    }
+
+    .grid-item.container-left .photo {
+        height: auto;
+        width: 100vw;
+        padding: 0;
+    
+    }
+
+    .content-left.name,
+    .content-left.contact,
+    .content-left.languages {
+        padding-right: 0;
+    }
+
+    .content-left.contact {
+        padding-top: 50px;
+    }
+
+    .content-left.contact h2,
+    .content-left.languages h2 {
+        padding-top: 0;
+    }
+
+    .content-left hr{
+        width: 289px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .grid-item.container-right {
+        width: 100%;
+    }
+
+    .container-right .content-right hr {
+        margin-top: 15px;
+        width: 327px;
+    }
+
+    .container-right .content-right {
+        width: 328px;
+        height: auto;
+        padding-top: 32px;
+    }
+
+    .container-right .content-right h2 {
+        padding: 0;
+    }
+
+    .content-right.skills .skills-right {
+        padding-left: 125px;
+    }
+
+    .skills-right .skills-item {
+        margin: 0;
+    }
+
+    .content-right.education {
+        padding-bottom: 43px;
+    }
+
+  }
