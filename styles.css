@@ -42,13 +42,14 @@ body {
     ;
 }
 
-.container-left {
+.grid-item.container-left {
     background-color: var(--color-background-left);
     border: 1px;
     border-style: hidden solid hidden hidden;
     display: block;
     grid-area: sidebar;
     width: 385px;
+    box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
 }
 
 .container-right {
@@ -93,7 +94,15 @@ a:visited {
 .photo {
     padding-top: var(--padding-top-medium);
     width: 385px;
-    height: auto;
+    height: 385px;
+}
+
+.photo:hover {
+    border-radius: 100%;
+    filter: drop-shadow(15px 15px 20px #2b2121);
+    cursor: pointer;
+    transform: scale(1.5) translateX(17%);
+    
 }
 
 /* Contact block */
@@ -166,6 +175,16 @@ a:visited {
 
 .education-info {
     padding-right: var(--padding-right-main);
+}
+
+/* Work */
+
+.work.previous {
+    opacity: .7;
+}
+
+.work.previous:hover {
+    opacity: 1;
 }
 
  /* SIZES */
