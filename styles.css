@@ -40,7 +40,6 @@ body {
     grid-template-areas: 
         "sidebar content"
     ;
-    position: relative;
 }
 
 .grid-item.container-left {
@@ -52,8 +51,6 @@ body {
     width: 385px;
     height: 100%;
     box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
-    position: absolute;
-    animation: leftUP 2s ease-in-out;
 }
 
 .container-right {
