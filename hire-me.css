@@ -19,6 +19,7 @@ form {
     position: fixed;
     left: calc(50% - 247px);
     top: calc(50% - 186.75px - 44.25px);
+    animation: formAppearance 3s ease-in-out;
 }
 
 label {
@@ -130,6 +131,7 @@ p {
 .error-message,
 .success-message {
     display: none;
+    text-align: left;
 }
 
 .error-message {
@@ -195,4 +197,16 @@ td {
 
 .contact-info {
     font-weight: bold;
+}
+
+@keyframes formAppearance {
+    from {
+        opacity: 0;
+        transform: scale(2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
 }
