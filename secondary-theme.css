@@ -1,0 +1,21 @@
+.secondary-theme {
+  color: #576F72;
+}
+.secondary-theme h1 {
+  color: #7D9D9C;
+}
+.secondary-theme .grid-container .grid-item a {
+  color: #61ebf5;
+}
+.secondary-theme .grid-container .grid-item a:visited {
+  color: #5b6104;
+}
+.secondary-theme .grid-container .grid-item.container-left {
+  background-color: #F0EBE3;
+}
+.secondary-theme .grid-container .grid-item.container-left .content-left.name .surname {
+  color: #323a3a;
+}
+.secondary-theme .grid-container .grid-item.container-right {
+  background-color: none;
+}/*# sourceMappingURL=secondary-theme.css.map */

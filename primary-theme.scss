@@ -1,0 +1,41 @@
+$color-background-left: #728ca9;
+$color-background-right: none;
+$color-text-primary: #333;
+$color-header-name: aliceblue;
+$color-header-surname: rgb(34, 6, 136);
+$color-link-primary: rgb(8, 8, 181);
+$color-link-visited: rgb(4, 4, 76);
+
+.primary-theme {
+    color: $color-text-primary;
+    h1 {
+        color: $color-header-name;
+    }
+
+    
+    .grid-container {
+        .grid-item {
+            a {
+                color: $color-link-primary;
+            }
+            a:visited {
+                color: $color-link-visited;
+            }
+            
+            &.container-left {
+                background-color: $color-background-left;
+                .content-left {
+                    &.name {
+                        .surname {
+                            color: $color-header-surname;
+                        }
+                    }
+                }
+            }
+
+            &.container-right {
+                background-color: $color-background-right;
+            }
+        }
+    }
+}

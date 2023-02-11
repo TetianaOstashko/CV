@@ -1,0 +1,21 @@
+.primary-theme {
+  color: #333;
+}
+.primary-theme h1 {
+  color: aliceblue;
+}
+.primary-theme .grid-container .grid-item a {
+  color: rgb(8, 8, 181);
+}
+.primary-theme .grid-container .grid-item a:visited {
+  color: rgb(4, 4, 76);
+}
+.primary-theme .grid-container .grid-item.container-left {
+  background-color: #728ca9;
+}
+.primary-theme .grid-container .grid-item.container-left .content-left.name .surname {
+  color: rgb(34, 6, 136);
+}
+.primary-theme .grid-container .grid-item.container-right {
+  background-color: none;
+}/*# sourceMappingURL=primary-theme.css.map */

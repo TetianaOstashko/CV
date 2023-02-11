@@ -1,0 +1,40 @@
+$color-background-left: #F0EBE3;
+$color-background-right: none;
+$color-text-primary: #576F72;
+$color-header-name: #7D9D9C;
+$color-header-surname: #323a3a;
+$color-link-primary: #61ebf5;
+$color-link-visited: #5b6104;
+
+.secondary-theme {
+    color: $color-text-primary;
+    h1 {
+        color: $color-header-name;
+    }
+
+    .grid-container {
+        .grid-item {
+            a {
+                color: $color-link-primary;
+            }
+            a:visited {
+                color: $color-link-visited;
+            }
+
+            &.container-left {
+                background-color: $color-background-left;
+                .content-left {
+                    &.name {
+                        .surname {
+                            color: $color-header-surname;
+                        }
+                    }
+                }
+            }
+
+            &.container-right {
+                background-color: $color-background-right;
+            }
+        }
+    }
+}

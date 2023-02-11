@@ -1,0 +1,330 @@
+@import './primary-theme.scss';
+@import './secondary-theme.scss';
+
+@mixin appearance ($animation-duration) {
+    animation: expand ease backwards;
+    animation-duration: $animation-duration;
+}
+@keyframes expand {
+    0% {
+      margin-top: 100vh;
+      opacity: 0;
+  
+    }
+    100% {
+      margin-top: 0;
+      opacity: 1;
+  
+    }
+}
+
+@keyframes scale {
+    to {
+        transform: scale(1.5) translateX(17%);
+    }
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.65;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+$margin-main: 0;
+$margin-secondary: 28px 0 28px;
+$padding-main-contact: 58px 85px 0 40px;
+$padding-main-items: 25px 236px 0 1px;
+$padding-top-small: 15px;
+$padding-top-medium: 36px;
+$padding-top-big: 53px; 
+$padding-left-main: 55px;
+$padding-left-big: 236px;
+$padding-right-main: 100px;
+$padding-left-contactItem: 5px 0 13px;
+$padding-left-languages: 36px 52px 0 42px;
+
+html {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: $margin-main;
+}
+
+.grid-container {
+    width: 1200px;
+    height: 1667px;
+    display: grid;
+    grid-template-columns: 385px auto;
+    grid-template-areas: 
+        "sidebar content"
+    ;
+    
+    hr {
+        border: {
+        top: 5px;
+        }
+
+        border-style: solid hidden hidden;
+    }
+
+    .grid-item {
+
+        &.container-left { 
+            background-color: $color-background-left;
+            border: 1px;
+            border-style: hidden solid hidden hidden;
+            display: block;
+            grid-area: sidebar;
+            width: 385px;
+            height: 100%;
+            box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
+            margin: $margin-main;
+            @include appearance (3s);
+    
+            .name {
+                height: 96px;
+                width: 260px;
+                padding: $padding-main-contact;
+            }
+               
+            .photo {
+                padding-top: $padding-top-medium;
+                width: 385px;
+                height: 385px;
+                margin: $margin-main;
+            
+                &:hover {
+                    border-radius: 100%;
+                    filter: drop-shadow(15px 15px 20px #2b2121);
+                    cursor: pointer;
+                    animation: scale 5s ease-in-out .3s;
+                }
+            }
+    
+            .content-left {
+                &.contact {
+                    padding: $padding-left-languages;
+                    .contact-item {
+                        width: 334px;
+            
+                        p {
+                            font-size: 12px;
+                            padding: $padding-left-contactItem;
+                        }
+            
+                        .email p {
+                            color: $color-link-primary;
+                        }
+                    }
+                }
+            }
+            
+            
+    
+            .languages {
+                height: 140px;
+                width: 291px;
+                padding: $padding-left-languages; 
+            }
+        }
+    
+        &.container-right { 
+            display: block;
+            grid-area: content;
+            margin: $margin-main;
+            padding-left: $padding-left-main;
+            @include appearance(3.5s);
+    
+            hr {
+                margin: $margin-secondary;
+                width: 659px; 
+            }
+    
+            .content-right {
+                &.skills, 
+                &.education {
+                    width: 659px;
+                }
+    
+                &.summary, 
+                &.workExperience {
+                    width: 706px;
+                }
+    
+                &.summary {
+                    height: 176px;
+                    padding-top: $padding-top-big;
+                }
+                
+                &.skills {
+                    height: 184px;
+                    margin: $margin-main;
+                    padding-top: $padding-top-big;
+        
+                    .skills-left {
+                        float: left;
+                        .skills-item {
+                            margin: $margin-main;
+                        }
+                    }
+    
+                    .skills-right {
+                        padding-left: $padding-left-big;
+                        .skills-item {
+                            margin: $margin-main;
+                        }
+                    }
+                }
+                
+                &.workExperience {
+                    .boldText {
+                        font-weight: bolder;
+                    }
+                    .work {
+                        &.previous {
+                            opacity: .5;
+                            &:hover {
+                                animation: fadeIn 3s ease-in-out;
+                                animation-fill-mode: forwards;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+    
+                &.education {
+                    height: 157px;
+                    padding-top: $padding-top-big;
+                    .education-info {
+                        padding-right: $padding-right-main;
+                        .boldText {
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+    
+            .previous,
+            .languages h5 {
+                padding-top: $padding-top-small;
+            }
+        }
+    
+    
+        a {
+            text-decoration: none;
+    
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .grid-container {
+        
+        width: 100vw;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "content"
+        ;
+        .grid-item {
+            &.container-left {
+                width: 100vw;
+                height: 100%;
+                margin-bottom: 25px;
+
+                .photo {
+                    height: auto;
+                    width: 100vw;
+                    padding: 0;
+                }
+                .content-left {
+                    &.name,
+                    &.languages {
+                        padding-right: 0;
+                    }
+
+                    &.contact {
+                        padding-right: 0;
+                        padding-top: 50px;
+                    }
+
+                    h2 {
+                        padding-top: 0;
+                    }
+
+                    hr{
+                        width: 289px;
+                        margin-top: 15px;
+                        margin-left: 0;
+                    }
+
+                }
+            }
+
+            &.container-right {
+                width: 100vw;
+                height: 100%;
+                .content-right {
+                    width: 100vw;
+                    padding-top: 32px;
+                    hr {
+                        margin-top: 15px;
+                        width: 327px;
+                    }
+                    h2 {
+                        padding: 0;
+                    }
+
+                    &.summary {
+                        padding-top: $padding-top-small;
+                    }
+                    &.skills {
+                        .skills-right {
+                            padding-left: 125px;
+                            .skills-item {
+                                margin: $margin-main;
+                            }
+                        }
+                    }
+                }
+
+                &.education {
+                    padding-bottom: 43px;
+                }
+            }
+        }
+    }
+}
+
+
+

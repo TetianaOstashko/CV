@@ -41,8 +41,6 @@ body {
     width: 100%;
 }
 
-/* My css */
-
 body {
     color: var(--color-text-primary);
     font-family: Arial, Helvetica, sans-serif;
@@ -56,7 +54,7 @@ body {
     grid-template-areas: 
         "sidebar content"
     ;
-}
+} 
 
 .grid-item.container-left {
     background-color: var(--color-background-left);
@@ -74,7 +72,7 @@ body {
     display: block;
     grid-area: content;
     animation: expand 3s ease .5s backwards;
-}
+} 
 
 h1 {
     color: var(--color-header-name);
@@ -98,7 +96,7 @@ a:visited {
 
 /* LEFT PART OF WEB-PAGE */
 
-/* Name block */
+
 .name {
     height: 96px;
     width: 260px;
@@ -106,9 +104,8 @@ a:visited {
 
 .surname {
     color: var(--color-header-surname);
-}
+} 
 
-/* Photo */
 .photo {
     padding-top: var(--padding-top-medium);
     width: 385px;
@@ -122,7 +119,6 @@ a:visited {
     animation: scale 5s ease-in-out .3s; 
 }
 
-/* Contact block */
 .contact {
     width: 334px;
 }
@@ -136,7 +132,6 @@ a:visited {
     color: var(--color-link-primary);
 }
 
-/* Language block */
 .languages {
     height: 140px;
     width: 291px;
@@ -155,6 +150,7 @@ a:visited {
     width: 659px;
 }
 
+
 .skills, .education {
     width: 659px;
 }
@@ -167,12 +163,11 @@ a:visited {
     font-weight: bolder;
 }
 
-/* Summary */
 .summary {
     height: 176px;
 }
 
-/* Skills */
+Skills 
 .skills {
     height: 184px;
 }
@@ -185,7 +180,7 @@ a:visited {
     padding-left: var(--padding-left-big); 
 }
 
-/* Education */
+Education 
 .education {
     height: 157px;
 }
@@ -193,8 +188,6 @@ a:visited {
 .education-info {
     padding-right: var(--padding-right-main);
 }
-
-/* Work */
 
 .work.previous {
     opacity: .5;
@@ -206,7 +199,6 @@ a:visited {
     cursor: pointer;
 }
 
- /* SIZES */
 .workExperience,
 .education,
 .skills,
