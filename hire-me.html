@@ -6,83 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./hire-me.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
+    <div class="container">
+        <main>
+            <div>
+                <form action="hire-me.html" method="get" class="mb-3 shadow rounded-3 needs-validation" novalidate>
+                    <h1 class="h1 text-primary">Hire me</h1>
+                    <!--Contact Information-->
+                    <div class="order-md-last" >
+                        <h4 class="text-primary">Contact information</h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Phone number</h6>
+                                    <small class="text-muted">+45 52 36 61 73</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Country of residence</h6>
+                                    <small class="text-muted">Denmark</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-    <main>
-        <h1>Hire me</h1>
-        <section> <!--Contact Information-->
-            <h2>Contact information</h2>
-            <table>
-                <tr>
-                    <td class="contact-info">Phone</td>
-                    <td>+45 52 36 61 73</td>
-                </tr>
+                    <div>
+                        <h4 class="text-primary">
+                            Contact Me
+                        </h4>
 
-                <tr>
-                    <td class="contact-info">Address</td>
-                    <td>Denmark</td>
-                </tr>
-            </table>
-        </section>
+                        <!-- Full Name -->
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+    
+                        <br />
+                        
+                        <!-- Email -->
+                        <div class="row">
+                            <label for="email" class="form-label ">
+                                E-mail 
+                                <span class="text-muted"> (Required)</span>
+                            </label>
+                            <div class="input-group has-validation">
+                                <input 
+                                    required
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Enter your e-mail" 
+                                    novalidated/>
+                                <div class="invalid-feedback">Please enter a valid email address!</div>
+                                <div class="valid-feedback">Success!</div>
+                            </div>
+                        </div>
+                        
+                        <br />
+    
+                        <!-- Allows to add job description -->
+                        <div class="form-floating">
+                            <textarea 
+                                name="hire-description" 
+                                id="hire-description"
+                                placeholder="Hint text"
+                                class="form-control">
+                            </textarea>
+                            <label for="hire-description" class="description">
+                                Job description:
+                            </label>
+                        </div>
+                        
+                        <br />
+    
+                        <!-- Allows to choose a work type -->
+                        <label for="work-type">
+                            Work type
+                        </label>
+                        <select 
+                            name="work-type" 
+                            id="work-type"
+                            class="form-select">
+                        <option value="" disabled selected hidden>Choose a type of work</option>
+                        <option value="on-site">On-site</option>
+                        <option value="remote">Remote</option>
+                        <option value="one-time-project">One-time project</option>
+                        </select>
+                        
+                        <br />
+    
+                        <!-- Adds check box -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Remember Me
+                            </label>
+                        </div>
+    
+                        <br />
+    
+                        <!-- Submit button -->
+                        <input type="submit" value="Hire me" class="btn btn-lg btn-primary w-100 mx-0 mb-2">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
 
-        <section> <!--Contact Me form-->
-            <form action="hire-me.html" method="get">
-                <fieldset>
-                    
-                    <legend>
-                        Contact me
-                    </legend>
-
-                    <label for="email">
-                        E-mail <span> *</span>:
-                    </label>
-                    <input 
-                        required
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="email"
-                        placeholder="Enter your e-mail" />
-
-                    <p class="error-message">Error</p>
-                    <p class="success-message">Success</p>
-                    
-
-                     <br />
-
-                    <label for="hire-description">
-                        Description:
-                    </label>
-                    <textarea 
-                        name="hire-description" 
-                        id="hire-description"
-                        placeholder="Hint text"></textarea>
-                    
-                    <br />
-
-                    <label for="work-type">
-                        Work type
-                    </label>
-                    <select 
-                        name="work-type" 
-                        id="work-type">
-                            <option value="" disabled selected hidden>Choose a type of work</option>
-                            <option value="on-site">On-site</option>
-                            <option value="remote">Remote</option>
-                            <option value="one-time-project">One-time project</option>
-                    </select>
-                    
-                    <br />
-
-                    <input type="submit" value="Hire me" class="button-submit">
-                </fieldset>
-            </form>
-        </section>
-
-
-    </main>
+    
     
 </body>
 </html>

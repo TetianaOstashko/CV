@@ -42,6 +42,17 @@
   background-color: none;
 }
 
+@-webkit-keyframes expand {
+  0% {
+    margin-top: 100vh;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
 @keyframes expand {
   0% {
     margin-top: 100vh;
@@ -52,9 +63,33 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: scale(1.5) translateX(17%);
+            transform: scale(1.5) translateX(17%);
+  }
+}
 @keyframes scale {
   to {
-    transform: scale(1.5) translateX(17%);
+    -webkit-transform: scale(1.5) translateX(17%);
+            transform: scale(1.5) translateX(17%);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -111,10 +146,13 @@ body {
   grid-area: sidebar;
   width: 385px;
   height: 100%;
-  box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
+  -webkit-box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
+          box-shadow: 5px 0 10px 0 rgb(180, 179, 179);
   margin: 0;
-  animation: expand ease backwards;
-  animation-duration: 3s;
+  -webkit-animation: expand ease backwards;
+          animation: expand ease backwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 .grid-container .grid-item.container-left .name {
   height: 96px;
@@ -129,9 +167,11 @@ body {
 }
 .grid-container .grid-item.container-left .photo:hover {
   border-radius: 100%;
-  filter: drop-shadow(15px 15px 20px #2b2121);
+  -webkit-filter: drop-shadow(15px 15px 20px #2b2121);
+          filter: drop-shadow(15px 15px 20px #2b2121);
   cursor: pointer;
-  animation: scale 5s ease-in-out 0.3s;
+  -webkit-animation: scale 5s ease-in-out 0.3s;
+          animation: scale 5s ease-in-out 0.3s;
 }
 .grid-container .grid-item.container-left .content-left.contact {
   padding: 36px 52px 0 42px;
@@ -156,8 +196,10 @@ body {
   grid-area: content;
   margin: 0;
   padding-left: 55px;
-  animation: expand ease backwards;
-  animation-duration: 3.5s;
+  -webkit-animation: expand ease backwards;
+          animation: expand ease backwards;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
 }
 .grid-container .grid-item.container-right hr {
   margin: 28px 0 28px;
@@ -197,8 +239,10 @@ body {
   opacity: 0.5;
 }
 .grid-container .grid-item.container-right .content-right.workExperience .work.previous:hover {
-  animation: fadeIn 3s ease-in-out;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeIn 3s ease-in-out;
+          animation: fadeIn 3s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   cursor: pointer;
 }
 .grid-container .grid-item.container-right .content-right.education {
