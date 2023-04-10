@@ -115,12 +115,16 @@ body {
                 width: 385px;
                 height: 385px;
                 margin: $margin-main;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                
+                &.photo-animation {
+                    transform: scale(1.5) translateX(100px);
+                }
             
                 &:hover {
                     border-radius: 100%;
-                    filter: drop-shadow(15px 15px 20px #2b2121);
-                    cursor: pointer;
-                    animation: scale 5s ease-in-out .3s;
+                    filter: drop-shadow(15px 15px 20px #2b2121); 
                 }
             }
     

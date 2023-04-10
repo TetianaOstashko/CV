@@ -164,14 +164,18 @@ body {
   width: 385px;
   height: 385px;
   margin: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.grid-container .grid-item.container-left .photo.photo-animation {
+  -webkit-transform: scale(1.5) translateX(100px);
+          transform: scale(1.5) translateX(100px);
 }
 .grid-container .grid-item.container-left .photo:hover {
   border-radius: 100%;
   -webkit-filter: drop-shadow(15px 15px 20px #2b2121);
           filter: drop-shadow(15px 15px 20px #2b2121);
-  cursor: pointer;
-  -webkit-animation: scale 5s ease-in-out 0.3s;
-          animation: scale 5s ease-in-out 0.3s;
 }
 .grid-container .grid-item.container-left .content-left.contact {
   padding: 36px 52px 0 42px;
