@@ -13,3 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+window.addEventListener('load', function() {
+  document.addEventListener('keydown', function(event) {
+    if (event.key.match(/^[a-z]$/)) {
+      event.preventDefault();
+      let letter = event.key.toUpperCase();
+      let section = document.querySelector('h2 span.nav-letter[textContent="' + letter + '"]').parentNode;
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});  

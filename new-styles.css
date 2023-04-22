@@ -127,6 +127,17 @@ body {
   margin: 0;
 }
 
+.nav-letter {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  border: 1px solid #000;
+  margin-right: 0.5em;
+  border-radius: 10%;
+}
+
 .grid-container {
   width: 1200px;
   height: 1667px;
@@ -327,6 +338,9 @@ body {
     margin: 0;
   }
   .grid-container .grid-item.container-right.education {
-    padding-bottom: 43px;
+    padding-bottom: 150px;
   }
+}
+#projects {
+  padding-top: 100px;
 }/*# sourceMappingURL=new-styles.css.map */
