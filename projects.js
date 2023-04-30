@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
     }
   }
   
-  const githubApi = new GithubApi('TetianaOstashko', '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');
+  const githubApi = new GithubApi('TetianaOstashko', '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');
   
   const reposList = document.getElementById('project-list');
   
